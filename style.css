@@ -130,3 +130,47 @@ body {
   font-size: 12px;
 }
 
+/* Version: max-width 628px  */
+@media only screen and (max-width: 628px) {
+  .card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image__main {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card__contents {
+    display: block;
+  }
+
+  .card__contents--head,
+  .card__contents--content,
+  .card__contents--price {
+    padding-bottom: 23px;
+  }
+}
+
+/* Version: max-width 375px  */
+@media only screen and (max-width: 375px) {
+  .card {
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+
+  .image__main {
+    max-height: 298px;
+  }
+
+  .card__contents {
+    padding: 24px;
+  }
+
+  .card__contents--head,
+  .card__contents--content,
+  .card__contents--price {
+    padding-bottom: 16px;
+  }
+}
