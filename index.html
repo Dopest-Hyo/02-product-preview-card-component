@@ -4,42 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-
+  <div class="card">
+    <div class="card__image">
+      <img src="./images/image-product-desktop.jpg" alt="" class="image__main">
+    </div>
+    <div class="card__contents">
+      <div class="card__contents--head">
+        <h3>PERFUME</h3>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <div class="card__contents--content">
+        <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL.</p>
+      </div>
+      <div class="card__contents--price">
+        <p class="price__now">$149.99</p>
+        <p class="price__past">$169.99</p>
+      </div>
+      <div class="card__contents--button">
+        <button class="button__add">
+          <img src="./images/icon-cart.svg" alt=" 'add to cart' icon image" class="button__cart-icon">
+          <span class="button__add">Add to Cart</span>
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io/profile/Dopest-Hyo" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Dopest-Hyo</a>.
   </div>
 </body>
 
